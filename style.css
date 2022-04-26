@@ -1,0 +1,135 @@
+:root{
+    --fuente-one:'Poppins', sans-serif;
+    --color-black:#191919;
+    --color-one:#fff;
+    --color-background:#CFFFF1;
+    --color-letters:#006241;
+    --color-hover-nav:#025c3e;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*barra de navegacion*/
+
+.nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: var(--color-one);
+    box-shadow: 0px 11px 16px 6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 11px 16px 6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 11px 16px 6px rgba(0,0,0,0.1);
+}
+
+.nav__ul{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.nav__li{
+    margin-right: 50px;
+    list-style: none;
+    transition: .8s all ease;
+    border-radius: 30px;
+}
+.nav__li a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--fuente-one);
+    font-weight: 500;
+    padding: 8px 15px 8px 15px;
+    font-size: 17px;
+}
+
+.nav__li:hover{
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-hover-nav);    
+}
+
+.nav__li a:hover{
+    color: var(--color-one);
+    font-weight: bold;
+}
+
+.nav img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/*header*/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-background);
+    font-family: var(--fuente-one);
+    align-content: center;
+}
+
+.header__txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.header__tittle{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color-hover-nav);
+}
+
+.header__paragrahp{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-letters);
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.header__button{
+    width: 133px;
+    height: 42px;
+    border: 3px solid var(--color-letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: .3s all ease;
+}
+
+.header__button:hover{
+    background-color: var(--color-letters);
+}
+
+.header__button a{
+    text-decoration: none;
+    font-weight: 0;
+    color: var(--color-letters);
+    padding: 5px;
+}
+
+.header__button a:hover{
+    color: #fff;
+}
+
+/*section 2*/
