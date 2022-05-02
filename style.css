@@ -343,7 +343,7 @@
     
         .nav-dos{
             width: 70%;
-            height: 70vh;
+            height: 100vh;
             position: fixed;
             transform: translateX(-100%);
             transition: .3s all ease;
